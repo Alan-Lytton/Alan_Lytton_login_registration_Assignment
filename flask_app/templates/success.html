@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename ='css/style.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Login and Registration</title>
+</head>
+
+<body>
+    <div class="container d-flex flex-column">
+        <div class="d-flex flex-column mt-3 mb-5">
+            <h1 class="text-center">Welcome {{ name[0]['first_name'] }}</h1>
+        </div>
+        <a class="btn btn-primary w-25 align-self-start mt-5" href="/destroy-session">Logout</a>
+    </div>
+</body>
+
+</html>
